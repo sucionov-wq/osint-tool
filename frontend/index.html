@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>OSINT Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>OSINT Toolkit</h1>
+
+<div class="block">
+    <h2>Username</h2>
+    <input id="username" placeholder="username">
+    <button onclick="checkUsername()">Check</button>
+</div>
+
+<div class="block">
+    <h2>Email</h2>
+    <input id="email" placeholder="email">
+    <button onclick="checkEmail()">Check</button>
+</div>
+
+<div class="block">
+    <h2>Domain</h2>
+    <input id="domain" placeholder="domain.com">
+    <button onclick="checkDomain()">Check</button>
+</div>
+
+<div class="block">
+    <h2>GeoINT (EXIF)</h2>
+    <input type="file" id="file">
+    <button onclick="uploadImage()">Upload</button>
+</div>
+
+<pre id="result"></pre>
+
+<script src="app.js"></script>
+</body>
+</html>
